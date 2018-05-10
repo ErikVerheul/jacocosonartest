@@ -1,6 +1,8 @@
 # jacocosonartest
 Demo the use of an extra module to aggegrate Jacoco test coverage.
 
+Run with mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent -Dmaven.test.failure.ignore=true -Paggegrate verify sonar:sonar -Dsonar.host.url=http://localhost:9000/ if Sonarqube is installed locally.
+
 Sonarqube these days does not present separate test coverage data for unit and integration tests. Especially collecting the 
 coverage data from the integration tests proved to be difficult.
 
