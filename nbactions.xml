@@ -12,4 +12,17 @@
                 <goal>-Dsonar.host.url=http://192.168.0.7:9000/sonarqube</goal>
             </goals>
         </action>
+        <action>
+            <actionName>CUSTOM-ReportAggegrated</actionName>
+            <displayName>ReportAggegrated</displayName>
+            <goals>
+                <goal>clean</goal>
+                <goal>org.jacoco:jacoco-maven-plugin:prepare-agent</goal>
+                <goal>-Dmaven.test.failure.ignore=true</goal>
+                <goal>-Paggegrate</goal>
+                <goal>verify</goal>
+                <goal>sonar:sonar</goal>
+                <goal>-Dsonar.host.url=http://192.168.0.7:9000/sonarqube</goal>
+            </goals>
+        </action>
     </actions>
