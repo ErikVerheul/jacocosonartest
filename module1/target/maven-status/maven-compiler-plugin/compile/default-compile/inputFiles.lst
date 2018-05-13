@@ -1,0 +1,3 @@
+/home/erik/dev/jacocosonartest/module1/src/main/java/mod1package/OnlyRegressionTested.java
+/home/erik/dev/jacocosonartest/module1/src/main/java/mod1package/Mod1Tested.java
+/home/erik/dev/jacocosonartest/module1/src/main/java/mod1package/Mod1NotTested.java
