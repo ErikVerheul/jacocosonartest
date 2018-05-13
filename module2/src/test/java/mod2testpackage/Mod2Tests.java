@@ -1,4 +1,7 @@
+package mod2testpackage;
 
+
+import mod2package.Mod2Tested;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 

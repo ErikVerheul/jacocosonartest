@@ -23,6 +23,8 @@
                 <goal>verify</goal>
                 <goal>sonar:sonar</goal>
                 <goal>-Dsonar.host.url=http://192.168.0.7:9000/sonarqube</goal>
+                
+                
             </goals>
         </action>
     </actions>
