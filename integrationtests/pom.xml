@@ -37,6 +37,17 @@
         <groupId>org.codehaus.mojo</groupId>
         <executions>
           <execution>
+            <id>Delete symlink to sources if present</id>
+            <phase>clean</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <executable>bash</executable>
+              <commandlineArgs>./src/main/bin/deleteforsonar.sh</commandlineArgs>
+            </configuration>
+          </execution>
+          <execution>
             <id>Create symlink to sources and classes of modules to be tested</id>
             <phase>verify</phase>
             <goals>
