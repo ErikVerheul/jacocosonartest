@@ -9,10 +9,7 @@
   </parent>
   <artifactId>integrationtests</artifactId>
   <packaging>jar</packaging>
-  <properties>
-    <sonar.sources>
-      ${project.basedir}/../module1/src/main/java/mod1package, ${project.basedir}/../module2/src/main/java/mod2package
-    </sonar.sources>
+  <properties>    
     <sonar.binaries>
       ${project.basedir}/../module1/target/classes/mod1package, ${project.basedir}/../module2/target/classes/mod2package
     </sonar.binaries>
