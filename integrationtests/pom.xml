@@ -28,5 +28,28 @@
       <scope>compile</scope>
     </dependency>
   </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <!-- Create a symbolic link to the the tested sources and classes to please Sonarqube-->
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.6.0</version>
+        <groupId>org.codehaus.mojo</groupId>
+        <executions>
+          <execution>
+            <id>Create symlink to sources and classes of modules to be tested</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <executable>bash</executable>
+              <commandlineArgs>./src/main/bin/copyforsonar.sh</commandlineArgs>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
       
 </project>
