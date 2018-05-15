@@ -9,11 +9,6 @@
   </parent>
   <artifactId>integrationtests</artifactId>
   <packaging>jar</packaging>
-  <properties>    
-    <sonar.binaries>
-      ${project.basedir}/../module1/target/classes/mod1package, ${project.basedir}/../module2/target/classes/mod2package
-    </sonar.binaries>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>nl.verheulconsultants</groupId>
